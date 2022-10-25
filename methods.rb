@@ -26,10 +26,15 @@ end
 
 puts add
 
-def halve num3=6, num4=2
-    half=num3/num4
-    return half 
-    return nil if num4!=integer
+def halve num3
+    if num3.class != Integer
+        return nil
+    else 
+        return num3 / 2 
+    end
 end
 
-puts halve
+puts halve ""
+
+
+
